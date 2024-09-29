@@ -1,4 +1,5 @@
 Draft RFC for DotEnv configuration files
+Version 0.1 2024-09-29
 
 ## Specification for DotEnv File Format
 
