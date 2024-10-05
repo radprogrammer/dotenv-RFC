@@ -89,25 +89,20 @@ Key=Value
 Key='Value'
 Key="Value"
 ````
-Double quotes (") MUST allow for variable interpolation and multi-line values.
+
+### Variable Interpolation
+Double quoted values MUST allow for variable interpolation.  A variable is defined using the format `{$KEY}`
 
 Example:
 
 `DB_CONFIG="user=${MYUSER} dbname=${MYDBNAME}"`
 
-Single quotes (') MUST prevent all interpolation of the key value
+Single quoted values should NEVER  all interpolation of the key value.   
+Unquoted values MAY allow variable interpolation.
 
-Example:
+Sinqle Quoted Example:
 
 `MYKEY='AsIs${NotAVariable}'`
-
-Variable Interpolation: For unquoted or double-quoted values, variable interpolation MUST be allowed using the format `{$KEY}`.
-
-Example:
-
-`ANOTHER_KEY="{$API_KEY}/extra"`
-
-Note: some implementations currently allow for a shorter `$KEY` variable format
 
 
 ### Multi-line Values:
