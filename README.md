@@ -91,7 +91,7 @@ Key="Value"
 ````
 
 ### Variable Interpolation
-Double quoted values MUST allow for variable interpolation.  A variable is defined using the format `{$KEY}`
+Double quoted values MUST allow for variable interpolation.  A variable is defined using the format `${KEY}`
 
 Example:
 
@@ -112,7 +112,7 @@ There are implementation variations for the support of multi-line values.  All i
 Example:
 ````
 MULTILINE_VAR="this double-quoted value
-is multi-line and should be supported along with {$KEY} variable interpolation"
+is multi-line and should be supported along with ${KEY} variable interpolation"
 ````
 
 Implementations MAY support the use of backticks to define non-interpolated multi-line values.
