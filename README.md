@@ -1,5 +1,5 @@
 Draft RFC for DotEnv configuration files
-Version 0.1 2024-09-29
+Version 0.2 2025-11-02
 
 ## Specification for DotEnv File Format
 
@@ -19,7 +19,7 @@ The file is typically named `.env`.
 It should be placed at the root of the project or in a location accessible by the application at runtime.
 
 ### File Encoding
-All DotEnv files MUST be `UTF-8` encoded, `without a BOM`.
+All DotEnv files MUST be `UTF-8` encoded, `without a BOM`.  A leading BOM MUST be ignored if present.
 
 
 ### Key-Value Pairs
@@ -52,6 +52,7 @@ Examples:
 - Whitespace on either side of the "=" character in a Key=Value pair MUST be ignored
 - Leading whitespace MUST be ignored for all lines EXCEPT when the leading spaces are part of a multi-line value
 - Trailing whitespace MUST be ignored for all lines EXCEPT when the trailing spaces are part of a multi-line value
+- Tabs count as whitespace
 
 
 
