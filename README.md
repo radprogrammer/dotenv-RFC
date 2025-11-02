@@ -97,7 +97,7 @@ Example:
 
 `DB_CONFIG="user=${MYUSER} dbname=${MYDBNAME}"`
 
-Single quoted values should NEVER  all interpolation of the key value.   
+Single quoted values MUST NOT allow interpolation of the key value.   
 Unquoted values MAY allow variable interpolation.
 
 Sinqle Quoted Example:
